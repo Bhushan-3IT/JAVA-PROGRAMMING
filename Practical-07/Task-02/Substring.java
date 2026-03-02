@@ -10,13 +10,14 @@ class Substring {
         }
         return count;
     }
+    
     static int m2(String s1,String s2){
         int count = 0;
         int index = 0;
 
         while ((index = s1.indexOf(s2, index)) != -1) {
             count++;
-            index = index + s2.length(); // skip full pattern
+            index = index + s2.length();
         }
 
         return count;
